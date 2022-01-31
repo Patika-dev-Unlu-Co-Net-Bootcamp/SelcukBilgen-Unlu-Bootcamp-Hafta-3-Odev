@@ -6,9 +6,6 @@ BEGIN
     SELECT @userId=UserId, @courseId=CourseId
     FROM inserted
 
-    -- değeri oku
-    -- SELECT [Percent] FROM SuccessSituations WHERE UserId=@userId AND CourseId=@courseId
-
     -- Kurs tablosundan gelen veriler
     DECLARE @weekTotal INT
     SELECT @weekTotal=HowManyWeeks
@@ -21,7 +18,7 @@ BEGIN
     FROM Attendances
     WHERE [Status] = 1 AND UserId=@userId AND CourseId=@courseId
     SELECT @continuity = (CONVERT(DECIMAL(5,2),@statusCount) / CONVERT(DECIMAL(5,2),@weekTotal))*100.00
-    --SELECT @continuity = CONVERT(DECIMAL(5,2),(@statusCount / @weekTotal)*100)
+    
     -- Trigger Update ifadesi
 
     UPDATE SuccessSituations
