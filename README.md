@@ -1,5 +1,13 @@
 # 3. Hafta Ödev
-Veritabanı 
+Ödev adımlarına aşağıdaki linkden ulaşabilirsiniz.  
+
+[Database Shema](https://dbdesigner.page.link/4THWPEv1Cu5EXHJ96)
+
+[Ünlü&Co .Net Bootcamp](https://checkered-antimatter-26d.notion.site/nl-Co-Net-Bootcamp-32d8b5962fe14cc2aa328481981f435b)
+
+  
+
+# Veritabanı 
 1. Patikadev yapısını düşünerek bir db oluşturun
   - eğitimler, öğrenciler,katılımcılar,eğitmenler,asistanlar, eğitimde öğrencilerin yoklamalarının ve başarı durumlarının tutulduğu tablolar olacaktır.
   - veritipleri ve ilişkiler belirtilmelidir.
