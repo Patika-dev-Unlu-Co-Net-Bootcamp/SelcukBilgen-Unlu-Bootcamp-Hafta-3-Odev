@@ -24,15 +24,9 @@ BEGIN
     DECLARE @startingDate DATE, @endingDate DATE
 
     -- kullanıcının daha önce katıldığı kursun başlangıç ve bitiş tarihi.
-    SELECT @startingDate = StartingDate
+    SELECT @startingDate = StartingDate,@endingDate = EndDate
     FROM Courses c
         INNER JOIN UserCourses uc ON c.Id = uc.CourseId
-        INNER JOIN Users u ON uc.UserId=u.Id
-    WHERE u.Id=@userId
-
-    SELECT @endingDate = EndDate
-    FROM Courses c
-        INNER JOIN UserCourses uc on c.Id=uc.CourseId
         INNER JOIN Users u ON uc.UserId=u.Id
     WHERE u.Id=@userId
 
