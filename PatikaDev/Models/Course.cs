@@ -13,7 +13,7 @@ namespace PatikaDev.Models
         [DataType(DataType.Date)] public DateTime StartingDate { get; set; }
         [DataType(DataType.Date)] public DateTime EndingDate { get; set; }
 
-        public ICollection<User> Users { get; set; }
+        public ICollection<UserCourse> UserCourses { get; set; }
         public ICollection<Attendance> Attendances { get; set; }
     }
 }
