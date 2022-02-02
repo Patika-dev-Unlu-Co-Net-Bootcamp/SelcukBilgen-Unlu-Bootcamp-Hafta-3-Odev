@@ -8,6 +8,6 @@ namespace PatikaDev.Models
         public byte Id { get; set; }
         [StringLength(50)] public string Name { get; set; }
 
-        public ICollection<User> Users { get; set; }
+        public ICollection<UserOperationClaim> UserOperationClaims { get; set; }
     }
 }

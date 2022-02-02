@@ -12,9 +12,9 @@ namespace PatikaDev.Models
         [StringLength(10)] public string Password { get; set; }
         public bool Status { get; set; }
 
-        public ICollection<Course> Courses { get; set; }
         public ICollection<Attendance> Attendances { get; set; }
         public ICollection<SuccessSituation> SuccessSituations { get; set; }
-        public ICollection<OperationClaim> OperationClaims { get; set; }
+        public ICollection<UserCourse> UserCourses { get; set; }
+        public virtual ICollection<UserOperationClaim> OperationClaims { get; set; }
     }
 }
